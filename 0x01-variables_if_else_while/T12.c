@@ -3,9 +3,9 @@
 /**
  * main - Prints all possible combination
  * of two two-digit numbers,
- *  ranging from 0-99, separated by a
- *comma followed by a space.
- * Return: Always 0.
+ *ranging from 0-99, separated by a comma
+ * followed by a space.
+ * Return: Always 0 for success.
  */
 int main(void)
 {
@@ -28,6 +28,8 @@ int main(void)
 			putchar(' ');
 		}
 	}
-putchar('\n');
-return (0);
-		}
+
+	putchar('\n');
+
+	return (0);
+}
