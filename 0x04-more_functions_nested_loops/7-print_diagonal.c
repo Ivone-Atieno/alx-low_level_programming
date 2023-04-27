@@ -19,11 +19,11 @@ void print_diagonal(int n)
 			}
 			_putchar('\\');
 			if (l == (n - 1))
-				{
-					continue;
+			{
+				continue;
 			}
 			_putchar(10);
-			}
-	_putchar(10);
 		}
 	}
+	_putchar(10);
+}
