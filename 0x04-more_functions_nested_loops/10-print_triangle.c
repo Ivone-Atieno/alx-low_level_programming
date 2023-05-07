@@ -13,21 +13,18 @@ if (size > 0)
 {
 for (a = 0; a < size; a++)
 {
-	space = size - a;
+	space = size - a - 1;
 
-	for (b = 0; b > size; b++)
+	for (b = 0; b < size; b++)
 	{
 		if (space > b)
-		{
 			_putchar(' ');
-		}
 		else
-		{
 			_putchar('#');
-		}
-		_putchar(10);
 	}
+		_putchar(10);
 }
+_putchar(10);
 }
 else
 	_putchar(10);
