@@ -22,9 +22,8 @@ for (a = 0; a < size; a++)
 		else
 			_putchar('#');
 	}
-		_putchar(10);
+	_putchar(10);
 }
-_putchar(10);
 }
 else
 	_putchar(10);
