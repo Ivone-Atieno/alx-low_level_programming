@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 if (argc != 3)
 {
-	printf("Error, only 2 numbers");
+	printf("Error\n");
 	return (1);
 }
 
