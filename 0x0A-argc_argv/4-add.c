@@ -5,31 +5,37 @@
 /**
  * main - main entry point
  * @argc: number count of arguments
- * @argv: Arguments
+ * @argv: Array of arguments
  *
- * Return: 0 for success
+ * Return: 0 for succes
  */
 
 int main(int argc, char *argv[])
 {
-	int x, y, sum = 0;
-	char *p;
-
-if (argc == 1)
-{
-	printf("0n");
-	return (0);
-}
+	int sum = 0;
+	int x, y, num;
 
 for (x = 1; x < argc; x++)
 {
-	y = strtol(argv[x], &p, 10);
-	if (*p != '0' || y < 0)
+	const char *p = argv[x];
+
+	for (y = 0; p[y] != '\0'; y++)
+	{
+		if (!isdigit(p[y]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
+
+	num = atoi(p);
+	if (num < 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	sum += y;
+
+	sum += num;
 }
 printf("%d\n", sum);
 return (0);
