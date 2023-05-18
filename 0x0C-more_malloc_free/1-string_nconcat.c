@@ -19,41 +19,40 @@ char *concat;
 
 unsigned int len1 = 0, len2 = 0, x, y;
 
- if (s1 == NULL)
-   {
-     s1 = "";
-   }
- if (s2 == NULL)
-   {
-     s2 = "";
-   }
+if (s1 == NULL)
+{
+	s1 = "";
+}
+if (s2 == NULL)
+{
+	s2 = "";
+}
 
- len1 = strlen(s1);
- len2 = strlen(s2);
+len1 = strlen(s1);
+len2 = strlen(s2);
 
- if (n >= len2)
-   {
-     n = len2;
-   }
+if (n >= len2)
+{
+	n = len2;
+}
 
- concat = malloc(sizeof(char) * (len1 + n + 1));
+concat = malloc(sizeof(char) * (len1 + n + 1));
 
- if (concat == NULL)
-   {
-     return (NULL);
-   }
+if (concat == NULL)
+{
+	return (NULL);
+}
 
- for (x = 0; x < len1; x++)
-   {
-     concat[x] = s1[x];
-   }
+for (x = 0; x < len1; x++)
+{
+	concat[x] = s1[x];
+}
 
- for (y = 0; y < n; y++)
-   {
-     concat[x + y] = s2[y];
-   }
+for (y = 0; y < n; y++)
+{
+	concat[x + y] = s2[y];
+}
 
- concat[x + y] = '\0';
-
- return (concat);
+concat[x + y] = '\0';
+return (concat);
 }
