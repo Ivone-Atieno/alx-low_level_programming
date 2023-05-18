@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * string_nconcat - concatenates two
+ * *string_nconcat - concatenates two
  * strings
  * @s1: string to concatenate from
  * @s2: string to append to
