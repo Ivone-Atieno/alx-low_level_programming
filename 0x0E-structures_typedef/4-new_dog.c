@@ -24,7 +24,6 @@ new_dog->owner = malloc(strlen(owner) + 1);
 
 if (new_dog->name == NULL || new_dog->owner == NULL)
 {
-	free(new_dog);
 	return (NULL);
 }
 
