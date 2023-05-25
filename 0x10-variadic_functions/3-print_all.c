@@ -25,7 +25,7 @@ if (format)
 		switch (format[index])
 		{
 		case 'c':
-printf("%s%c" ,s, va_arg(arg_s, int));
+printf("%s%c", s, va_arg(arg_s, int));
 break;
 		case 'i':
 printf("%s%d", s, va_arg(arg_s, int));
