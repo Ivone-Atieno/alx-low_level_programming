@@ -35,7 +35,7 @@ break;
 printf("%s%f", s, va_arg(arg_s, double));
 break;
 		case 's':
-str = va_arg(arg_s, char *);
+str = va_arg(arg_s, char*);
 if (!str)
 	str = "(nil)";
 printf("%s%s", s, str);
