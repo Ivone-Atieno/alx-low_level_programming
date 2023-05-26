@@ -7,13 +7,14 @@
  *@format: list of types of arguments passed
  *@...: numbers of different parameters to
  * be passed
+ *Return : void
  */
 
 void print_all(const char * const format, ...)
 {
 	char *str;
 	char *s = "";
-	int index = 0;
+	int in = 0;
 
 	va_list arg_s;
 
@@ -21,9 +22,9 @@ void print_all(const char * const format, ...)
 
 if (format)
 {
-	while (format[index])
+	while (format[in])
 	{
-		switch (format[index])
+		switch (format[in])
 		{
 		case 'c':
 printf("%s%c", s, va_arg(arg_s, int));
@@ -41,11 +42,11 @@ if (!str)
 printf("%s%s", s, str);
 break;
 default:
-	index++;
+	in++;
 	continue;
 }
 s = ",";
-index++;
+in++;
 }
 }
 printf("\n");
